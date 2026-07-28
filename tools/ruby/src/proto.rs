@@ -177,7 +177,7 @@ fn load_prebuilt_asset(env: &HostEnvironment, version: &str) -> AnyResult<Option
     };
 
     let releases: PrebuiltReleases = fetch_json(
-        "https://raw.githubusercontent.com/moonrepo/plugins/master/tools/ruby/releases.json",
+        "https://raw.githubusercontent.com/lamalex/plugins/d034f4c83cbc1fefd6a5ca589ba6b6083fa2288c/tools/ruby/releases.json",
     )?;
 
     Ok(select_prebuilt_asset(&releases, platform, version))
